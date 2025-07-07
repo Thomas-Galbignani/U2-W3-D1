@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="d-flex justify-content-center mt-5">
+      <h1>Form crea Pet Lists</h1>
+    </header>
+    <main
+      class="bg-dark text-light container mt-5 d-flex align-items-center flex-column"
+    >
+      <form id="petForm">
+        <div class="mb-3 d-flex align-items-center flex-column">
+          <label for="petName" class="form-label">Nome del Pet:</label>
+          <input type="text" class="form-control" id="petName" required />
+        </div>
+        <div class="mb-3 d-flex align-items-center flex-column">
+          <label for="ownerName" class="form-label">Nome del Padrone:</label>
+          <input type="text" class="form-control" id="ownerName" required />
+        </div>
+        <div class="mb-3 d-flex align-items-center flex-column">
+          <label for="species" class="form-label">Specie:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="species"
+            placeholder="Es: cane, gatto, coniglio, etc."
+            required
+          />
+        </div>
+        <div class="mb-3 d-flex align-items-center flex-column">
+          <label for="breed" class="form-label">Razza:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="breed"
+            placeholder="Es: labrador, soriano, nano, etc."
+            required
+          />
+        </div>
+        <div class="mb-3 d-flex align-items-center flex-column">
+          <button type="submit" class="btn btn-success">Aggiungi Pet</button>
+        </div>
+      </form>
+
+      <h2 class="mt-5 mb-3 text-center">Lista dei Pet</h2>
+      <ul id="petsList" class="list-group"></ul>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
